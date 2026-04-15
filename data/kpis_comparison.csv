@@ -1,0 +1,3 @@
+Scénario,Total transactions,Nombre de fraudes,Taux de fraude (%),Montant total
+Avant Big Data,255353,306,0.12,35863.31
+Après Big Data,283726,473,0.167,58591.39

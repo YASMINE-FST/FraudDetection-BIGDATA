@@ -1,0 +1,53 @@
+% main.tex
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[autostyle=true,french=guillemets]{csquotes}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{hyperref}
+\setstretch{1.5}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{minitoc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\dominitoc
+
+% --- Bibliographie moderne ---
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib} % fichier .bib séparé
+
+\begin{document}
+
+% --- Page de garde ---
+\input{PageGarde.tex}
+\clearpage
+
+% --- Dédicace et remerciements ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% --- Table des matières et listes ---
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+% --- Contenu principal ---
+\input{introductionG.tex}
+\input{chapitre1.tex}
+\input{chapitre2.tex}
+\input{chapitre3.tex}
+\input{chapitre4.tex}
+\input{conclusionG.tex}
+
+% --- Bibliographie ---
+\printbibliography
+
+\end{document}
